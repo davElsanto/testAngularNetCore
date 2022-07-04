@@ -1,0 +1,6 @@
+#creacion bd
+CREATE DATABASE d_santos_db;
+
+#migracion inversa
+
+dotnet ef dbcontext scaffold "server=localhost;port=3306;user=root;password=mariadb;database=d_santos_db" Pomelo.EntityFrameworkCore.MySql -c D_Santos_DbContext -o Models 
