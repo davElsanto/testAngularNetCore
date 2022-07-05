@@ -1,0 +1,17 @@
+<div class="container mt-3" style="max-width: 400px;">
+    <form>
+        <div class="form-floating mb-3">
+            <input type="text" #nombre id="nombre" class="form-control">
+            <label for="nombre" class="form-label">Nombre</label>
+        </div>
+    
+        <div class="form-floating mb-3">
+            <input type="password" #clave id="clave" class="form-control">
+            <label for="clave" class="form-label">Clave</label>
+        </div>
+        
+        <button type="button" class="btn btn-primary" (click)="login()">Acceder</button>
+
+    </form>
+    
+</div>
