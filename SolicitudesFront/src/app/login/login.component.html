@@ -1,12 +1,24 @@
 <div class="container mt-3" style="max-width: 400px;">
     <form>
         <div class="form-floating mb-3">
-            <input type="text" #nombre id="nombre" class="form-control">
+            <input 
+                type="text" 
+                id="nombre" 
+                class="form-control" 
+                [(ngModel)]="nombre"
+                [ngModelOptions]="{standalone: true}"
+            >
             <label for="nombre" class="form-label">Nombre</label>
         </div>
     
         <div class="form-floating mb-3">
-            <input type="password" #clave id="clave" class="form-control">
+            <input 
+                type="password" 
+                id="clave" 
+                class="form-control" 
+                [(ngModel)]="clave"
+                [ngModelOptions]="{standalone: true}"
+            >
             <label for="clave" class="form-label">Clave</label>
         </div>
         
