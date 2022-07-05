@@ -1,5 +1,5 @@
 create table Solicitudes (
-    Id int not null,
+    Id int not null AUTO_INCREMENT,
     UsuarioId int,
     DescripcionSolicitud nvarchar(50) not null,
     Justificativo nvarchar(50) not null,

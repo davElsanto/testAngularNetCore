@@ -1,3 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using D_SANTOS_BACKEND.Models;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
