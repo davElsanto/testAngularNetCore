@@ -38,7 +38,7 @@ public class UsuarioController : ControllerBase
     }
 
     [HttpDelete("{id}")]
-    public async Task<IActionResult> UpdateUsuario(int id){
+    public async Task<IActionResult> DeleteUsuario(int id){
         await this.usurioRepository.DeleteUsuario(id);
         return NoContent();
     }

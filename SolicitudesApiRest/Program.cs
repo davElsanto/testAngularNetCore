@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 var mySQLConfiguration = new MySQLConfiguration(builder.Configuration.GetConnectionString("MySqlConnection"));
 builder.Services.AddSingleton(mySQLConfiguration);
 builder.Services.AddScoped<IUsurioRepository, UsurioRepository>();
+builder.Services.AddScoped<ISolicitudRepository, SolicitudRepository>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
